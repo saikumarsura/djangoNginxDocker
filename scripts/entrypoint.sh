@@ -11,4 +11,4 @@ python manage.py collectstatic --noinput
 # --master measn we asking to run this appication as master to have max 
 #  --enable-threads we asking to run on threads 
 # --modules pick th app.wsgi
-uwsgi --socket :8000 --master --enable-threads --modules app.wsgi
+uwsgi --socket :8000 --master --enable-threads --module app.wsgi
