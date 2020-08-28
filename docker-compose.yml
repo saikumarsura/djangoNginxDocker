@@ -6,6 +6,7 @@ services:
       context: .
     ports:
       - "8000:8000"
+    # changes in the local will refect instantly no need to build the image again
     volumes:
       - ./app:/app
     # We do this only on th local not in the production server
